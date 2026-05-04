@@ -1,58 +1,72 @@
-<img alt="AgentLink" src="https://raw.githubusercontent.com/techdigger/agentlink-landing/master/public/brand/wordmark.svg" height="48" />
+<p align="center">
+  <img src="https://raw.githubusercontent.com/techdigger/agentlink-landing/master/public/brand/wordmark.svg" alt="AgentLink" height="48" />
+</p>
 
-On-chain registry linking AI agent wallets to biomapped human wallets.
+<h1 align="center">AgentLink Contracts</h1>
 
-To learn more about AgentLink see the [docs].
+<h4 align="center">Link AI agent wallets to verified human wallets on-chain.</h4>
 
-[docs]: https://agentlink.humanode.io/docs
+<p align="center">
+  <strong>
+    <a href="https://agentlink.humanode.io">About</a>
+    &nbsp;&nbsp;&bull;&nbsp;&nbsp;
+    <a href="https://agentlink.humanode.io/docs">Docs</a>
+    &nbsp;&nbsp;&bull;&nbsp;&nbsp;
+    <a href="https://basescan.org/address/0x31e98F489ad65dF5Ee43CBe06e4f35557Cd0abb2">Basescan</a>
+    &nbsp;&nbsp;&bull;&nbsp;&nbsp;
+    <a href="https://humanode.io">Humanode</a>
+  </strong>
+</p>
 
-## Contract Addresses
+## About
+
+AgentLink is an on-chain registry that links AI agent wallets to human-verified owner wallets via [Humanode](https://humanode.io) biomapping. A link is active only while the owner remains biomapped — no admin keys, no upgrades, no stale state.
+
+Learn more at [agentlink.humanode.io](https://agentlink.humanode.io).
+
+## Deployments
 
 | Network | Contract | Address |
 |---------|----------|---------|
 | Base | `BiomapperAgentRegistry` | [`0x31e98F489ad65dF5Ee43CBe06e4f35557Cd0abb2`](https://basescan.org/address/0x31e98F489ad65dF5Ee43CBe06e4f35557Cd0abb2) |
 | Base Sepolia | `BiomapperAgentRegistry` | [`0x16F2a7AC67B6aC1E57dD5528A24b1fC689902Be2`](https://sepolia.basescan.org/address/0x16F2a7AC67B6aC1E57dD5528A24b1fC689902Be2) |
 
-## Implementation Table
+## Usage
 
-| Contract | Implemented Interfaces |
-|----------|----------------------|
-| `BiomapperAgentRegistry` | [`IBiomapperAgentRegistry`], [`IBridgedBiomapperRead`] |
+See the [documentation](https://agentlink.humanode.io/docs) for integration guides and examples.
 
-[`IBiomapperAgentRegistry`]: src/interfaces/IBiomapperAgentRegistry.sol
-[`IBridgedBiomapperRead`]: src/interfaces/IBridgedBiomapperRead.sol
-
-## Installation
-
-### With Foundry
+Install via Forge:
 
 ```shell
 forge install techdigger/open-agentlink-contracts
 ```
 
-Import in your contracts:
-
 ```solidity
 import {IBiomapperAgentRegistry} from "open-agentlink-contracts/src/interfaces/IBiomapperAgentRegistry.sol";
 ```
 
-### With npm/yarn
+## Development
+
+### Requirements
+
+- [Foundry](https://getfoundry.sh)
+- [Node.js](https://nodejs.org) + [pnpm](https://pnpm.io)
+
+### Building and testing
 
 ```shell
-npm install @agentlink/contracts
+forge soldeer install
+forge build --sizes
+forge test -vvv
 ```
 
-```solidity
-import {IBiomapperAgentRegistry} from "@agentlink/contracts/src/interfaces/IBiomapperAgentRegistry.sol";
-```
+### Contribution
 
-## Usage
+1. Fork the repository, clone your fork, create a branch for your changes.
+2. Write your code and tests, commit the changes.
+3. Create a pull request.
 
-See the [`examples`][examples] directory for integration examples.
-
-[examples]: ./examples
-
-## Bug Bounty
+## Security
 
 To report a vulnerability, email **security@humanode.io** — please do not open a public issue.
 
