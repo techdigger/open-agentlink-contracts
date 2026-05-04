@@ -1,0 +1,79 @@
+{
+	"$schema": "./profiles.schema.json",
+	"artifactVersion": 1,
+	"source": "open-agentlink-contracts/deployments",
+	"profiles": [
+		{
+			"id": "base",
+			"label": "Base mainnet",
+			"kind": "base",
+			"status": "draft",
+			"chain": {
+				"namespace": "eip155",
+				"chainId": 8453,
+				"caip2": "eip155:8453",
+				"name": "Base",
+				"explorerUrl": "https://basescan.org",
+				"defaultRpcUrls": ["https://mainnet.base.org"]
+			},
+			"accounts": {
+				"format": "eip55"
+			},
+			"biomapper": {
+				"bridgeAddress": "0x31e98F489ad65dF5Ee43CBe06e4f35557Cd0abb2",
+				"appUrl": "https://mainnet.biomapper.hmnd.app/"
+			},
+			"registry": {
+				"abiVersion": "1",
+				"status": "not-deployed"
+			},
+			"x402": {
+				"defaultPaymentNetwork": "eip155:8453",
+				"defaultFacilitatorUrl": "https://x402.org/facilitator",
+				"supportedSchemes": ["exact"]
+			},
+			"linker": {
+				"enabled": true,
+				"managementEnabled": false
+			}
+		},
+		{
+			"id": "base-sepolia",
+			"label": "Base Sepolia",
+			"kind": "base",
+			"status": "stable",
+			"chain": {
+				"namespace": "eip155",
+				"chainId": 84532,
+				"caip2": "eip155:84532",
+				"name": "Base Sepolia",
+				"explorerUrl": "https://sepolia.basescan.org",
+				"defaultRpcUrls": ["https://sepolia.base.org"]
+			},
+			"accounts": {
+				"format": "eip55"
+			},
+			"biomapper": {
+				"bridgeAddress": "0x16F2a7AC67B6aC1E57dD5528A24b1fC689902Be2",
+				"appUrl": "https://testnet5.biomapper.hmnd.app/"
+			},
+			"registry": {
+				"address": "0xc0fb26BaACe7E1BCb3aFFD547AD5f2cAc4A4F51b",
+				"deploymentBlock": "39898864",
+				"abiVersion": "1",
+				"status": "verified",
+				"explorerUrl": "https://sepolia.basescan.org/address/0xc0fb26BaACe7E1BCb3aFFD547AD5f2cAc4A4F51b"
+			},
+			"x402": {
+				"defaultPaymentNetwork": "eip155:84532",
+				"defaultFacilitatorUrl": "https://x402.org/facilitator",
+				"supportedSchemes": ["exact"]
+			},
+			"linker": {
+				"enabled": true,
+				"managementEnabled": true
+			}
+		}
+	],
+	"partnerOverlays": []
+}

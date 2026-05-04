@@ -1,0 +1,17 @@
+node_modules
+.env
+.env.local
+.env*.local
+
+# Hardhat
+hardhat-artifacts
+hardhat-cache
+
+# Foundry
+cache
+out
+dependencies
+broadcast
+
+# Ignition local deployment journals
+ignition/deployments

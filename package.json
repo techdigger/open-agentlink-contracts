@@ -1,0 +1,32 @@
+{
+	"name": "open-agentlink-contracts",
+	"version": "0.1.0",
+	"private": false,
+	"type": "module",
+	"packageManager": "pnpm@10.15.1",
+	"scripts": {
+		"validate:profiles": "node scripts/validate-profiles.mjs",
+		"contracts:setup": "forge soldeer install",
+		"contracts:compile": "pnpm contracts:setup && hardhat compile",
+		"contracts:test": "pnpm contracts:setup && pnpm forge:test",
+		"forge:build": "forge build --sizes",
+		"forge:test": "forge test -vvv",
+		"deploy:simulated": "PATH=$HOME/.local/bin:$HOME/.bun/bin:$PATH pnpm exec hardhat ignition deploy --network hardhatMainnet --write-localhost-deployment --parameters ignition/parameters/base-sepolia.json ignition/modules/BiomapperAgentRegistry.ts",
+		"deploy:base-sepolia": "PATH=$HOME/.local/bin:$HOME/.bun/bin:$PATH pnpm exec hardhat ignition deploy --network baseSepolia --parameters ignition/parameters/base-sepolia.json ignition/modules/BiomapperAgentRegistry.ts",
+		"deploy:base": "PATH=$HOME/.local/bin:$HOME/.bun/bin:$PATH pnpm exec hardhat ignition deploy --network base --parameters ignition/parameters/base.json ignition/modules/BiomapperAgentRegistry.ts"
+	},
+	"devDependencies": {
+		"@nomicfoundation/hardhat-ignition": "^3.1.2",
+		"@nomicfoundation/hardhat-toolbox-viem": "^5.0.4",
+		"@openzeppelin/contracts": "^5.6.1",
+		"ajv": "^8.17.1",
+		"ajv-formats": "^3.0.1",
+		"hardhat": "^3.4.0",
+		"typescript": "^5.9.3",
+		"viem": "^2.48.2"
+	},
+	"overrides": {
+		"lodash-es": "4.18.1",
+		"undici": "6.25.0"
+	}
+}
