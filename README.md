@@ -8,9 +8,9 @@
 
 <p align="center">
   <strong>
-    <a href="https://agentlink.humanode.io">About</a>
+    <a href="https://agentlink.id">About</a>
     &nbsp;&nbsp;&bull;&nbsp;&nbsp;
-    <a href="https://agentlink.humanode.io/docs">Docs</a>
+    <a href="https://agentlink.id/docs">Docs</a>
     &nbsp;&nbsp;&bull;&nbsp;&nbsp;
     <a href="https://sepolia.basescan.org/address/0x16F2a7AC67B6aC1E57dD5528A24b1fC689902Be2">Basescan</a>
     &nbsp;&nbsp;&bull;&nbsp;&nbsp;
@@ -22,7 +22,7 @@
 
 AgentLink is an on-chain registry that links AI agent wallets to human-verified owner wallets via [Humanode](https://humanode.io) biomapping. A link is active only while the owner remains biomapped — no admin keys, no upgrades, no stale state.
 
-Learn more at [agentlink.humanode.io](https://agentlink.humanode.io).
+Learn more at [agentlink.id](https://agentlink.id).
 
 ## Deployments
 
@@ -32,7 +32,7 @@ Learn more at [agentlink.humanode.io](https://agentlink.humanode.io).
 
 ## Usage
 
-See the [documentation](https://agentlink.humanode.io/docs) for integration guides and examples.
+See the [documentation](https://agentlink.id/docs) for integration guides and examples.
 
 Install via Forge:
 
