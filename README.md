@@ -12,7 +12,7 @@
     &nbsp;&nbsp;&bull;&nbsp;&nbsp;
     <a href="https://agentlink.humanode.io/docs">Docs</a>
     &nbsp;&nbsp;&bull;&nbsp;&nbsp;
-    <a href="https://basescan.org/address/0x31e98F489ad65dF5Ee43CBe06e4f35557Cd0abb2">Basescan</a>
+    <a href="https://sepolia.basescan.org/address/0x16F2a7AC67B6aC1E57dD5528A24b1fC689902Be2">Basescan</a>
     &nbsp;&nbsp;&bull;&nbsp;&nbsp;
     <a href="https://humanode.io">Humanode</a>
   </strong>
@@ -28,7 +28,6 @@ Learn more at [agentlink.humanode.io](https://agentlink.humanode.io).
 
 | Network | Contract | Address |
 |---------|----------|---------|
-| Base | `BiomapperAgentRegistry` | [`0x31e98F489ad65dF5Ee43CBe06e4f35557Cd0abb2`](https://basescan.org/address/0x31e98F489ad65dF5Ee43CBe06e4f35557Cd0abb2) |
 | Base Sepolia | `BiomapperAgentRegistry` | [`0x16F2a7AC67B6aC1E57dD5528A24b1fC689902Be2`](https://sepolia.basescan.org/address/0x16F2a7AC67B6aC1E57dD5528A24b1fC689902Be2) |
 
 ## Usage
