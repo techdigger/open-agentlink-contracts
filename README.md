@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/techdigger/agentlink-landing/master/public/brand/wordmark.svg" alt="AgentLink" height="48" />
+  <img src="./brand/wordmark.svg" alt="AgentLink" height="48" />
 </p>
 
 <h1 align="center">AgentLink Contracts</h1>
@@ -20,7 +20,7 @@
 
 ## About
 
-AgentLink is an on-chain registry that links AI agent wallets to human-verified owner wallets via [Humanode](https://humanode.io) biomapping. A link is active only while the owner remains biomapped — no admin keys, no upgrades, no stale state.
+AgentLink is an on-chain registry that links AI agent wallets to human-verified owner wallets via [Humanode Biomapper](https://docs.biomapper.hmnd.app/about/). A link is active only while the owner remains biomapped — no admin keys, no upgrades, no stale state.
 
 Learn more at [agentlink.id](https://agentlink.id).
 
@@ -67,7 +67,7 @@ forge test -vvv
 
 ## Security
 
-To report a vulnerability, email **security@humanode.io** — please do not open a public issue.
+To report a vulnerability, email **v@humanode.io** — please do not open a public issue.
 
 ## License
 
