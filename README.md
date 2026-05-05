@@ -12,7 +12,7 @@
     &nbsp;&nbsp;&bull;&nbsp;&nbsp;
     <a href="https://agentlink.id/docs">Docs</a>
     &nbsp;&nbsp;&bull;&nbsp;&nbsp;
-    <a href="https://sepolia.basescan.org/address/0x16F2a7AC67B6aC1E57dD5528A24b1fC689902Be2">Basescan</a>
+    <a href="https://basescan.org/address/0x7Ef35Bf180dcDAA5AB6cdEC7e9DED6230aD12263">Basescan</a>
     &nbsp;&nbsp;&bull;&nbsp;&nbsp;
     <a href="https://humanode.io">Humanode</a>
   </strong>
@@ -20,15 +20,23 @@
 
 ## About
 
-AgentLink is an on-chain registry that links AI agent wallets to human-verified owner wallets via [Humanode Biomapper](https://docs.biomapper.hmnd.app/about/). A link is active only while the owner remains biomapped — no admin keys, no upgrades, no stale state.
+AgentLink is an on-chain registry that links AI agent wallets to human-verified owner wallets via [Humanode Biomapper](https://docs.biomapper.hmnd.app/about/). A link is active only while the owner remains biomapped: no admin keys, no upgrades, no stale state.
 
 Learn more at [agentlink.id](https://agentlink.id).
 
 ## Deployments
 
-| Network | Contract | Address |
-|---------|----------|---------|
-| Base Sepolia | `BiomapperAgentRegistry` | [`0x16F2a7AC67B6aC1E57dD5528A24b1fC689902Be2`](https://sepolia.basescan.org/address/0x16F2a7AC67B6aC1E57dD5528A24b1fC689902Be2) |
+| Network | Contract | Registry | Biomapper | Status |
+|---------|----------|----------|-----------|--------|
+| Base mainnet | `BiomapperAgentRegistry` | [`0x7Ef35Bf180dcDAA5AB6cdEC7e9DED6230aD12263`](https://basescan.org/address/0x7Ef35Bf180dcDAA5AB6cdEC7e9DED6230aD12263) | [`0x31e98F489ad65dF5Ee43CBe06e4f35557Cd0abb2`](https://basescan.org/address/0x31e98F489ad65dF5Ee43CBe06e4f35557Cd0abb2) | Stable, verified |
+| Base Sepolia | `BiomapperAgentRegistry` | [`0x1d8434eAFe5B92215ED37050Ba3a89E19fF5B973`](https://sepolia.basescan.org/address/0x1d8434eAFe5B92215ED37050Ba3a89E19fF5B973) | [`0x16F2a7AC67B6aC1E57dD5528A24b1fC689902Be2`](https://sepolia.basescan.org/address/0x16F2a7AC67B6aC1E57dD5528A24b1fC689902Be2) | Stable, verified |
+
+Base mainnet deployment details:
+
+- Chain ID: `8453`
+- CAIP-2: `eip155:8453`
+- Deployment block: `45593341`
+- ABI version: `1`
 
 ## Usage
 
@@ -67,7 +75,7 @@ forge test -vvv
 
 ## Security
 
-To report a vulnerability, email **v@humanode.io** — please do not open a public issue.
+To report a vulnerability, email **v@humanode.io**. Please do not open a public issue.
 
 ## License
 
